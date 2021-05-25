@@ -1,0 +1,90 @@
+<div id="con">
+  <!--************************NAVBAR****************************-->
+  <div class="overlay" id="overlay"></div>
+  <nav class="navbar navbar-expand-sm ">
+      <a class="navbar-brand" href="#">Logo</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Services</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" (click)="onOpenModal()">Sign in</a>
+              </li>
+          </ul>
+      </div>
+  </nav>
+  <!--************************background Image ****************************-->
+  <div class="header" id="header">
+      <img src="../../../assets/images/bg42.jpg">
+  </div>
+  <!--************************ADVANTAGES ****************************-->
+  <div class="advantages row">
+      <div class="advantage_item col-md-2  p-3 mb-5 bg-white rounded">
+          <i class="fas fa-ticket-alt"></i>
+          <h5>Buy Ticket Online</h5>
+          <p>you can buy your tickets easily using our plateforme</p>
+      </div>
+      <div class="advantage_item col-md-2  p-3 mb-5 bg-white rounded">
+        <i class="fas fa-ticket-alt"></i>
+        <h5>Buy Ticket Online</h5>
+        <p>you can buy your tickets easily using our plateforme</p>
+    </div>
+    <div class="advantage_item col-md-2  p-3 mb-5 bg-white rounded">
+      <i class="fas fa-ticket-alt"></i>
+      <h5>Buy Ticket Online</h5>
+      <p>you can buy your tickets easily using our plateforme</p>
+  </div>
+
+</div>
+
+
+
+
+
+
+<!--************************  MODAL ****************************-->
+<div class="mymodal" id="modal" >
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header border-bottom-0">
+          <button type="button" class="close" (click)="onCloseModal()">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="form-title text-center">
+            <h4>Login</h4>
+            <div *ngIf="mode==1" class="alert alert-danger" role="alert">Nom d'utilisateur ou mot de passe invalide !</div>
+          </div>
+          <div class="d-flex flex-column text-center">
+            <form>
+              <div class="form-group">
+                <input [(ngModel)]="loginRequest.gmail" [ngModelOptions]="{standalone: true}" type="email" class="form-control" id="email1"placeholder="Your email address...">
+              </div>
+              <div class="form-group">
+                <input [(ngModel)]="loginRequest.password" [ngModelOptions]="{standalone: true}" type="password" class="form-control" id="password1" placeholder="Your password...">
+              </div>
+              <button (click)="login()" type="button" class="btn btn-info btn-block btn-round"  >Login</button>
+            </form>
+            
+            
+        <div class="modal-footer d-flex justify-content-center">
+          <div class="signup-section">Not a member yet? <a routerLink="/public/sign" class="text-info"  data-dismiss="modal" > Sign Up</a>.</div>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+
+

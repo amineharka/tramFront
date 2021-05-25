@@ -1,0 +1,76 @@
+/*******************NAVBAR STYLING*********************/
+nav{
+    background-color: #e63946;
+    
+}
+a{
+    color:white;
+}
+
+nav i{
+    display: inline-block;
+    color : white ;
+}
+
+a:hover,i:hover{
+    color:rgb(212, 202, 201);
+}
+nav a img{
+    display: inline-block;
+    width: 100%;
+}
+/*******************HEADER STYLING*********************/
+.header img{
+    width: 100%;
+}
+
+/*******************Advantages*********************/
+.advantages{
+    padding:30px 0px;
+    text-align: center;
+    margin : 0px !important;
+}
+.advantages .advantage_item{
+    display: inline-block;
+    text-align: center;
+    margin:0px auto !important;
+    border : 2px #e63946 solid ;
+}
+.advantages .advantage_item i{
+    font-size: 65px;
+    display: inline-block;
+    width: 100%;
+    color :#e63946;
+    
+}
+
+.overlay{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    opacity: 0;
+    background: rgba(143,27,15,0.8);
+    transition: all 0.7s;
+    visibility:hidden;
+}
+
+.mymodal{
+    position: fixed;
+    top: -50%;
+    left: 50%;
+    width: 50%;
+    max-width: 630px;
+    min-width: 320px;
+    height: auto;
+    z-index: 2000;
+    visibility: hidden;
+    backface-visibility: hidden;
+    transform: translateX(-50%) translateY(-50%);
+    transition: all 0.8s;
+}
+
+
+

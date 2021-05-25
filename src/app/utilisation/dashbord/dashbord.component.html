@@ -1,0 +1,58 @@
+
+<div class="flex h-full  bg-white h-screen ">
+<div class="fixed lg:fixed bottom-0 w-full lg:w-24 lg:h-full z-10">
+  <div class="w-full lg:w-24 h-full bg-gray-700  ">
+   
+       <a href="#" class="hidden absolute top-10 left-12 transform -translate-x-1/2 bg-green-200 lg:block w-14 h-14 rounded-xl "></a>
+      
+    <div class="flex lg:flex-col items-center justify-center h-full space-x-4 lg:space-x-0 lg:space-y-4 py-4 lg:pt-1">
+       
+       <a routerLink="/public/dashbord/home">
+        <div class="flex justify-center items-center w-14 h-14 text-white opacity-50 rounded-xl hover:bg-white hover:opacity-100 hover:text-blue-600 transform hover:-translate-y-8 lg:hover:translate-y-0 lg:hover:translate-x-8 duration-300  hover:shadow-xl bg-gray-500">
+         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6">
+           <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
+         </svg>
+        </div>
+      </a>
+      <a routerLink="/public/dashbord/profile">
+        <div class="flex justify-center items-center w-14 h-14 text-white opacity-50 rounded-xl hover:bg-white hover:opacity-100 hover:text-blue-600 transform hover:-translate-y-8 lg:hover:translate-y-0 lg:hover:translate-x-8 duration-300  hover:shadow-xl bg-gray-500">
+         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"  class="w-6 h-6">
+           <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
+         </svg>
+        </div>
+      </a>
+      <a routerLink="/public/dashbord/payement">
+        <div class="flex justify-center items-center w-14 h-14 text-white opacity-50 rounded-xl hover:bg-white hover:opacity-100 hover:text-blue-600 transform hover:-translate-y-8 lg:hover:translate-y-0 lg:hover:translate-x-8 duration-300  hover:shadow-xl bg-gray-500">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6">
+            <path d="M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4z" />
+            <path fill-rule="evenodd" d="M18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z" clip-rule="evenodd" />
+          </svg>
+        </div>
+       </a>
+       <a routerLink="/public/dashbord/tickets">
+        <div class="flex justify-center items-center w-14 h-14 text-white opacity-50 rounded-xl hover:bg-white hover:opacity-100 hover:text-blue-600 transform hover:-translate-y-8 lg:hover:translate-y-0 lg:hover:translate-x-8 duration-300  hover:shadow-xl bg-gray-500">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6">
+            <path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z" />
+            <path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z" />
+          </svg>
+        </div>
+       </a>
+       <a href="#">
+        <div class="flex justify-center items-center w-14 h-14 text-white opacity-50 rounded-xl hover:bg-white hover:opacity-100 hover:text-blue-600 transform hover:-translate-y-8 lg:hover:translate-y-0 lg:hover:translate-x-8 duration-300  hover:shadow-xl bg-gray-500">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6">
+            <path fill-rule="evenodd" d="M18 13V5a2 2 0 00-2-2H4a2 2 0 00-2 2v8a2 2 0 002 2h3l3 3 3-3h3a2 2 0 002-2zM5 7a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1zm1 3a1 1 0 100 2h3a1 1 0 100-2H6z" clip-rule="evenodd" />
+          </svg>
+        </div>
+       </a>
+       
+
+    </div>
+  </div> 
+</div>
+<div class="w-full lg:ml-24 "> 
+       
+            
+        <router-outlet></router-outlet>
+       
+   </div>
+  </div>

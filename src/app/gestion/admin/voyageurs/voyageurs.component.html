@@ -1,0 +1,54 @@
+<div class="mycontainer">
+    <div *ngIf="voyageurs.length != 0 && !isLoading">
+        <h3>La Liste Des Voyageures</h3>
+        <br>
+        <table class="min-w-max w-full table-auto">
+          <thead>
+              <tr class="bg-gray-200 text-gray-600 uppercase text-sm leading-normal">
+                  <th class="py-3 px-6 text-left">Nom</th>
+                  <th class="py-3 px-6 text-left">Prenom</th>
+                  <th class="py-3 px-6 text-center">Gmail</th>
+                  <th class="py-3 px-6 text-center">CIN</th>
+                  <th class="py-3 px-6 text-center">PHone</th>
+                  <th class="py-3 px-6 text-center">Sexe</th>
+              </tr>
+          </thead>
+          <tbody class="text-gray-600 text-sm font-light">
+              <tr *ngFor="let voyageur of voyageurs | paginate:config"class="border-b border-gray-200 hover:bg-gray-100">
+                  <td class="py-3 px-6 text-left whitespace-nowrap">
+                      {{voyageur.nom}}
+                  </td>
+                  <td class="py-3 px-6 text-left">
+                    {{voyageur.prenom}}
+                  </td>
+                  <td class="py-3 px-6 text-center">
+                    {{voyageur.gmail}}
+                  </td>
+                  <td class="py-3 px-6 text-center">
+                    {{voyageur.cin}}
+                  </td>
+                  <td class="py-3 px-6 text-center">
+                    {{voyageur.phone}}               
+                  </td>
+                  <td class="py-3 px-6 text-center">
+                    {{voyageur.sexe}}
+                </td>
+              </tr>
+              
+          </tbody>
+      </table>
+        <pagination-controls id="basicPaginate" (pageChange)="pageChanged($event)"></pagination-controls>
+    </div>
+    <div *ngIf="voyageurs.length == 0 && !isLoading"  class="mycontainer">
+        <img src="https://42f2671d685f51e10fc6-b9fcecea3e50b3b59bdc28dead054ebc.ssl.cf5.rackcdn.com/v2/assets/empty.svg" >
+        <br><br>
+        <h5>No Results Found</h5>
+    </div>
+
+    <section class = "container" *ngIf="isLoading">
+      <div class = "spinner spin-1"></div>
+      <div class = "spinner spin-2"></div>
+      <div class = "spinner spin-3"></div>
+    </section>
+
+</div>
