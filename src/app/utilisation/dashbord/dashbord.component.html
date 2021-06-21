@@ -74,24 +74,21 @@
       </div>
       <div class="modal-body">
         <div class="form-title text-center">
-          <h4>Login</h4>
+          <h4>Générer E-tickets</h4>
           
         </div>
         <div class="d-flex flex-column text-center">
           <form>
             <div class="form-group">
-              <input [(ngModel)]="generateTicketRequest.nombre" [ngModelOptions]="{standalone: true}" type="text" class="form-control" id="nombre"placeholder="Your email address...">
+              <input [(ngModel)]="generateTicketRequest.nombre" [ngModelOptions]="{standalone: true}" type="text" class="form-control" id="nombre"placeholder="Nombre De Tickets...">
             </div>
             <div class="form-group">
-              <input [(ngModel)]="generateTicketRequest.ligne" [ngModelOptions]="{standalone: true}" type="text" class="form-control" id="ligne" placeholder="Your password...">
+              <select [(ngModel)]="generateTicketRequest.ligne" [ngModelOptions]="{standalone: true}" class="form-control">
+                <option *ngFor="let l of lignes" [value]="l.value">{{l.name}}</option>
+              </select>
             </div>
-            <button (click)="generateTicket()" type="button" class="btn btn-info btn-block btn-round"  >Generer</button>
+            <button (click)="generateTicket()" type="button" class="btn btn-info btn-block btn-round"  >Génerer</button>
           </form>
-          
-          
-      <div class="modal-footer d-flex justify-content-center">
-        <div class="signup-section">Not a member yet? <a routerLink="/public/sign" class="text-info"  data-dismiss="modal" > Sign Up</a>.</div>
-      </div>
   </div>
 </div>
 </div>

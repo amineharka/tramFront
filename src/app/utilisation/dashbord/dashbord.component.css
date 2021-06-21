@@ -177,36 +177,20 @@ Forms
 2. Remove the margin in Firefox and Safari.
 */
 
-button,
-input,
-optgroup,
-select,
-textarea {
-  font-family: inherit; /* 1 */
-  font-size: 100%; /* 1 */
-  line-height: 1.15; /* 1 */
-  margin: 0; /* 2 */
-}
+
 
 /**
 Remove the inheritance of text transform in Edge and Firefox.
 1. Remove the inheritance of text transform in Firefox.
 */
 
-button,
-select { /* 1 */
-  text-transform: none;
-}
+
 
 /**
 Correct the inability to style clickable types in iOS and Safari.
 */
 
-button,
-[type='button'],
-[type='submit'] {
-  -webkit-appearance: button;
-}
+
 
 /**
 Remove the inner border and padding in Firefox.
@@ -284,7 +268,6 @@ dd,
 h1,
 h2,
 h3,
-h4,
 h5,
 h6,
 hr,
@@ -294,20 +277,14 @@ pre {
   margin: 0;
 }
 
-button {
-  background-color: transparent;
-  background-image: none;
-}
+
 
 /**
  * Work around a Firefox/IE bug where the transparent `button` background
  * results in a loss of the default `button` focus styles.
  */
 
-button:focus {
-  outline: 1px dotted;
-  outline: 5px auto -webkit-focus-ring-color;
-}
+
 
 fieldset {
   margin: 0;
@@ -408,21 +385,11 @@ textarea {
   resize: vertical;
 }
 
-input::-moz-placeholder, textarea::-moz-placeholder {
-  opacity: 1;
-  color: #9ca3af;
-}
 
-input:-ms-input-placeholder, textarea:-ms-input-placeholder {
-  opacity: 1;
-  color: #9ca3af;
-}
 
-input::placeholder,
-textarea::placeholder {
-  opacity: 1;
-  color: #9ca3af;
-}
+
+
+
 
 button {
   cursor: pointer;
@@ -435,10 +402,9 @@ table {
 h1,
 h2,
 h3,
-h4,
 h5,
 h6 {
-  font-size: inherit;
+  font-size: 1.5em;
   font-weight: inherit;
 }
 
@@ -460,15 +426,7 @@ a {
  * normalize.css.
  */
 
-button,
-input,
-optgroup,
-select,
-textarea {
-  padding: 0;
-  line-height: inherit;
-  color: inherit;
-}
+
 
 /**
  * Use the configured 'mono' font family for elements that
@@ -1766,4 +1724,12 @@ video {
 }
 
 @media (min-width: 1536px) {
+}
+
+input,select{
+  margin-top:16px;
+  border:solid #ced4da 1px;
+}
+.modal-content{
+  padding-bottom: 20px;
 }

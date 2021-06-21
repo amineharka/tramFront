@@ -9,8 +9,6 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { NgxQRCodeModule } from '@techiediaries/ngx-qrcode';
 
-import { GoogleMapsModule } from '@angular/google-maps'
-
 
 import { AppComponent } from './app.component';
 import { GestionComponent } from './gestion/gestion.component';
@@ -56,7 +54,7 @@ import { PayementComponent } from './utilisation/dashbord/payement/payement.comp
     PayementComponent,
     
   ],
-  imports: [
+  imports: [ 
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
@@ -66,8 +64,6 @@ import { PayementComponent } from './utilisation/dashbord/payement/payement.comp
     BrowserAnimationsModule,
     NgxPaginationModule,
     NgxQRCodeModule,
-    GoogleMapsModule
-    
   ],
   providers: [{ provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true }],
   bootstrap: [AppComponent]

@@ -22,15 +22,8 @@ export class TicketsComponent implements OnInit {
   constructor(private ticketService : TicketService) { }
 
   ngOnInit(): void {
-    //this.getTickets();
-    for (var _i = 0; _i < 4; _i++) {
-      let v : Eticket =new Eticket();
-      v.prix = 8;
-
-      v.status = "Non Valide";
-      
-      this.etickets.push(v);
-    }
+    this.getTickets();
+    
     this.config = {
       id: 'basicPaginate',
       itemsPerPage: 2,

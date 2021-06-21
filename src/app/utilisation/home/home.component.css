@@ -3,11 +3,13 @@ nav{
     background-color: #e63946;
     
 }
+
 a{
-    color:white;
+    color:black;
 }
 
 nav i{
+    margin:0px 25px;
     display: inline-block;
     color : white ;
 }
@@ -16,6 +18,7 @@ a:hover,i:hover{
     color:rgb(212, 202, 201);
 }
 nav a img{
+    
     display: inline-block;
     width: 100%;
 }
@@ -23,10 +26,14 @@ nav a img{
 .header img{
     width: 100%;
 }
+.navbar-brand{
+    margin-left: 3.5rem;
+    margin-right: 3rem;
+}
 
 /*******************Advantages*********************/
 .advantages{
-    padding:30px 0px;
+    padding:90px 0px;
     text-align: center;
     margin : 0px !important;
 }
@@ -35,6 +42,7 @@ nav a img{
     text-align: center;
     margin:0px auto !important;
     border : 2px #e63946 solid ;
+    padding:44px !important;
 }
 .advantages .advantage_item i{
     font-size: 65px;
@@ -72,5 +80,45 @@ nav a img{
     transition: all 0.8s;
 }
 
+/*******************Footer*********************/
 
+footer{
+    background-color: #e63946;
+    color:white;
+    display: flex;
+    padding:40px;
+}
+
+footer .footer-right ,footer .footer-left{
+    display:inline-block;
+    width:50%;
+}
+
+.footer-left{
+    padding-left: 50px;
+}
+
+.footer-left i{
+    font-size:26px;
+    margin-right: 20px;
+}
+
+.footer-left div{
+    margin:40px 0;
+}
+
+.footer-right p{
+    width:70%;
+}
+
+.icons{
+    display:flex;
+    justify-content: space-evenly;
+    width: 70%;
+    margin-top: 66px;
+}
+
+.icons i{
+    font-size: 30px;
+}
 

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TicketService } from 'src/app/service/ticket.service';
 
 @Component({
   selector: 'app-dashbord',
@@ -7,15 +8,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashbordComponent implements OnInit {
 
-  generateTicketRequest : any ={nomber : "",ligne : ""};
+  generateTicketRequest ={nombre : "",ligne : "Ligne 1",prix:80};
 
-  constructor() { }
+  lignes = [
+    { name: "Ligne 1", value: "Ligne 1" },
+    { name: "Ligne 2", value: "Ligne 2" }
+  ];
+
+  constructor(private ticketService : TicketService) { }
 
   ngOnInit(): void {
   }
 
   generateTicket(){
 
+    this.ticketService.generateTickets(this.generateTicketRequest).subscribe(data=>{
+      console.log("working");
+    })
   }
 
   public onOpenModal()

@@ -20,6 +20,11 @@ export class TicketService{
         return this.http.get<Eticket[]>("http://localhost:8085/voyageur/consulterTickets");
     }
 
+    public generateTickets(gtr:any):Observable<string>
+    {
+        return this.http.post<string>("http://localhost:8085/voyageur/generateTicket",gtr,{responseType : 'text' as 'json'});
+    }
+
 
 
 
